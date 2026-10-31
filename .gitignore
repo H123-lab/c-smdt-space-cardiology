@@ -1,0 +1,23 @@
+# COMSOL Multiphysics temporary and recovery files
+*.mph.lock
+*.mph.status
+*_recovery/
+*.log
+
+# MATLAB variables and caches
+*.mat
+*.fig
+.matlab/
+
+# Python virtual environments and compilation
+__pycache__/
+*.pyc
+venv/
+.env
+.pytest_cache/
+
+# Large geometry and solution file formats to exclude from Git history
+*.dcm
+*.vtu
+*.vtp
+*.out
