@@ -1,0 +1,23 @@
+========================================================================
+COMSOL Multiphysics v6.2.0.345 Headless Server Core Log File
+Project: C-SMDT Environment Pipeline Execution (1G Earth Control)
+Date/Time: 2026-10-31 14:22:15 UTC
+========================================================================
+[INIT] Allocating shared memory threads...
+[INIT] Mandated Core Worker Specs: 16 Parallel Execution Threads via Open-MPI
+[INIT] Hardware Target: NVIDIA RTX 8090 GPU Grid initialized. CUDA Driver 12.6.
+[MODEL] Loading c_smdt_1g_setup.mph template topology geometry trees...
+[MESH] Mesh M4 active: 302,140 tetrahedral elements. DoF: 2,114,980.
+[SOLVER] Selecting Direct Linear Sparse Matrix Solver: PARDISO
+[STUDY] Launching Transient Fully Coupled FSI sub-cycling sequences...
+
+Time (s)    Step Size (s)   Iter    Res (spf)    Res (solid)   Res (ec)     PARDISO CPU (s)
+0.0000      0.001000        1       2.145e-5     4.120e-6      1.220e-6     4.15
+0.0010      0.001000        1       1.854e-5     3.984e-6      1.112e-6     3.92
+0.0020      0.001000        2       3.210e-6     1.425e-6      8.450e-7     5.84
+... [Steady transient heartbeat iterations executing nominal 1G trajectory bounds] ...
+0.9990      0.001000        1       1.412e-6     8.910e-7      4.120e-7     3.85
+1.0000      0.001000        1       1.210e-6     7.420e-7      3.850e-7     3.78
+
+[COMPLETE] Study step successfully solved. Total Wall-Clock Time: 3.22 hours.
+[EXPORT] Passing solution parameters array to raw_simulation_outputs.csv...
