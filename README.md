@@ -157,4 +157,11 @@ c-smdt-space-cardiology/
     ├── paraview_state.pvsm            # 3D streamline/strain heatmap viewport setup
     ├── plots_generator.py             # Computes PV-loop/GLS vector chart overlays
     └── mesh_convergence_plot.py       # Plots elements convergence stability track
-```
+├── 📁 parameters/
+│   ├── baseline_parameters.json       # General setpoints and monthly remodeling rates
+│   ├── gravity_conditions.json        # Windkessel parameters for 1G, 0.38G, and 0G
+│   ├── holzapfel_ogden_material.json  # Myocardium and valve material constants
+│   ├── blood_rheology.json           # Non-Newtonian Carreau-Yasuda fluid metrics
+│   ├── sensitivity_analysis_inputs.csv # Sobol index inputs and variation thresholds
+│   └── parameter_calibration_bounds.json # Upper/lower search boundaries for Bayesian steps
+
