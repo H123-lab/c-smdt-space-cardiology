@@ -1,0 +1,5 @@
+Loop_Phase_Segment,Expected_Internal_Volume_mL,Expected_Internal_Pressure_mmHg,Target_Regime_Context
+Isovolumic_Contraction,122.0,45.2,1G_Nominal_Systolic_Start
+Peak_Systolic_Ejection,85.4,118.0,1G_Nominal_Systolic_Peak
+Isovolumic_Relaxation,44.0,22.4,1G_Nominal_Diastolic_Start
+Diastolic_Filling_End,122.0,6.5,1G_Nominal_Diastolic_End
