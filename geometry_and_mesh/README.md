@@ -5,3 +5,8 @@
 * **Dimensions**: Bounded bounding-box dimensions ($X: 68.4\text{ mm}$, $Y: 72.1\text{ mm}$, $Z: 114.5\text{ mm}$)
 * **Anatomical Bounds**: Includes endocardial and epicardial wall surfaces spanning from the base (mitral/aortic valve rings) down to the ventricular apex.
 * **Source Dataset**: Anonymized reconstruction derived from the NASA Open Science Data Repository (Spaceflight-analog control cohorts).
+
+### 2. `fiber_orientation_atlas.vtk`
+* **Format**: VTK Legacy DataFile (ASCII VECTORS and SCALARS)
+* **Resolution**: $64 \times 64 \times 64$ voxel grid interpolation field
+* **Biophysical Mapping**: Contains continuous structural field tensors defining local myofiber vectors. The helical angle scales natively across the ventricular wall thickness from $+60^\circ$ (inner endocardial boundary layer) shifting down to $-60^\circ$ (outer epicardial layer) to drive anisotropic finite-strain computation loops accurately.
