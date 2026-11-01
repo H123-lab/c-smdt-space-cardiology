@@ -1,0 +1,17 @@
+{
+  "Closed_Loop_Autonomic_Control_Loop": {
+    "MAP_Setpoint_mmHg": 93.3,
+    "HR_Nominal_bpm": 70.0,
+    "Tau_Adaptation_Days": 180.0,
+    "Dynamic_Gain_Limits": {
+      "G_Max_1G_Baseline": 1.00,
+      "G_Max_038G_Mars": 0.85,
+      "G_Max_0G_Microgravity": 0.35
+    },
+    "Heart_Rate_Variability_Targets_ms": {
+      "RMSSD_1G_Baseline": 42.5,
+      "RMSSD_038G_Mars": 38.1,
+      "RMSSD_0G_Microgravity": 21.2
+    }
+  }
+}
