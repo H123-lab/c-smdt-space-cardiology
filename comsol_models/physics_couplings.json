@@ -1,0 +1,22 @@
+{
+  "C-SMDT_Version": "2026.1",
+  "Solver_Engine": "PARDISO Direct Sparse Solver",
+  "Simulation_Type": "Transient Fully Coupled FSEI",
+  "Numerical_Tolerances": {
+    "ALE_Mesh_Displacement_Residual": 1e-4,
+    "Fluid_Velocity_Pressure_Residual": 1e-4,
+    "Electrophysiology_Monodomain_PDE_Tolerance": 1e-5,
+    "Time_Step_Control": {
+      "Initial_Delta_t_ms": 1.0,
+      "Minimum_Delta_t_ms": 0.5,
+      "Maximum_Delta_t_ms": 2.0,
+      "Time_Stepping_Method": "BDF Backward Differentiation Formula"
+    }
+  },
+  "Anisotropic_Material_Constants": {
+    "Holzapfel-Ogden_a": 0.496,
+    "Holzapfel-Ogden_b": 7.24,
+    "Holzapfel-Ogden_a_f": 2.23,
+    "Holzapfel-Ogden_b_f": 11.43
+  }
+}
