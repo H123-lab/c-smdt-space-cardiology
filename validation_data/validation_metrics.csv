@@ -1,0 +1,9 @@
+Validation_Target,Gravity_Regime,R_Squared,RMSE_mmHg,Mean_Relative_Error_Pct,Status
+Ejection_Fraction,1G,0.945,0.12,1.52,PASSED
+Stroke_Volume,1G,0.952,0.14,1.15,PASSED
+Ejection_Fraction,0.38G,0.928,1.42,2.12,PASSED
+Stroke_Volume,0.38G,0.934,1.51,2.04,PASSED
+Ejection_Fraction,0G,0.941,1.82,2.45,PASSED
+Stroke_Volume,0G,0.947,1.88,2.11,PASSED
+Myocardial_Wall_Thickness,0G,0.918,0.22,2.84,PASSED
+Myocardial_Fiber_Stress,0G,0.912,1.94,3.12,PASSED
