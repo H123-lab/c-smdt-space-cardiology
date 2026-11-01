@@ -1,0 +1,4 @@
+Parabola_ID,Phase_Type,Gravity_Level_G,Duration_Sec,Transient_CVP_mmHg,Transient_Stroke_Volume_mL,Detection_Method
+Novespace-P01,Injection,1.8,20,11.4,131.2,Transthoracic Echo
+Novespace-P02,Microgravity,0.0,22,8.8,112.5,Transthoracic Echo
+Novespace-P03,Martian,0.38,32,6.4,115.8,Transthoracic Echo
