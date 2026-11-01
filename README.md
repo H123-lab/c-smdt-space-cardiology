@@ -21,6 +21,40 @@ Due to the intensive degrees of freedom ($2.1 \times 10^6$) required by the FSI 
 * **System Volatile Memory**: Minimum 512GB System RAM
 * **Average Computing Cycle Runtime**: 2.5 to 4.5 hours per full simulated cardiac sequence
 
+# COMSOL Multiphysics Model Setup and Boundary Configurations
+
+This folder guides users on how to deploy and configure the **Cardio-Spatial Multi-Domain Digital Twin (C-SMDT)** template within the COMSOL Multiphysics v6.2 user interface.
+
+## 🛠️ Step-by-Step Physics Interface Settings
+
+The fully coupled model uses three core physics modules integrated via an Arbitrary Lagrangian-Eulerian (ALE) moving grid domain.
+
+### 1. Fluid Domain: Laminar Flow (`spf`)
+* **Governing Equations**: Incompressible Navier-Stokes solved via direct numerical allocation.
+* **Material Properties**: 
+  * Density (`rho`): `1060[kg/m^3]` (Blood mass baseline)
+  * Dynamic Viscosity (`mu`): `0.0035[Pa*s]` (Newtonian assumptions)
+* **Boundary Configurations**:
+  * **Inlet (Mitral Plane)**: Velocity profile specified via dynamic ventricular diastolic parameters.
+  * **Outlet (Aortic Boundary)**: Set to `Pressure` boundary type, driven dynamically by the coupled lump-parameter afterload equation: `p0 = p_Windkessel_afterload`.
+  * **Wall Boundaries**: Linked to the Fluid-Solid Interface node with a strict no-slip condition.
+
+### 2. Solid Domain: Structural Mechanics (`solid`)
+* **Governing Equations**: Finite-strain hyperelasticity formulations under large displacement physics.
+* **Material Formulation**: Transversely isotropic hyperelasticity mapping via the **Holzapfel–Ogden passive strain energy density matrix**:
+  * $a = 0.496 \text{ kPa}$, $b = 7.24$, $a_f = 2.23 \text{ kPa}$, $b_f = 11.43$.
+* **Fiber Alignment Vector Fields**: Vector arrays ($\mathbf{f}_0, \mathbf{s}_0$) are interpolated directly from the voxel data in `geometry_and_mesh/fiber_orientation_atlas.vtk`.
+* **Constraints**: Fixed zero-displacement boundary constraints applied at the rigid epicardial valve plane ring intersections.
+
+### 3. Electrical Domain: Electric Currents / Monodomain (`ec`)
+* **Governing Equations**: Time-dependent monodomain Partial Differential Equation (PDE) system tracking cell transmembrane potentials ($V_m$).
+* **Conductivity Properties**: Anisotropic, fiber-oriented tensors tracking the mapped myocardial paths.
+* **Activation Target Sequence**: Synchronized apex-to-base depolarization propagation wavefront calibrated to replicate standard mammalian QRS complexes.
+
+### 4. Kinematic Grid Interface: Deforming Domain / ALE (`fsi`)
+* **Moving Mesh Selection**: Applied directly to the inner fluid cavity zone.
+* **Smoothing Algorithm**: Hyperelastic mesh smoothing configuration, enforcing strict displacement and pressure continuity conditions across the deforming tissue-fluid interfaces down to a residual tolerance threshold of $<10^{-4}$.
+
 ## 📄 Computational Protocol
 
 The formalized setup execution steps are documented in [PROTOCOL.md](./PROTOCOL.md).
