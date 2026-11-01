@@ -1,0 +1,5 @@
+Gravity_Regime,HR_bpm,MAP_mmHg,CVP_mmHg,EDV_mL,ESV_mL,SV_mL,EF_Pct,CO_L_min
+1G_Earth,70.0,93.3,5.0,122.0,44.0,78.0,64.0,5.46
+0.38G_Mars,76.0,89.2,6.2,110.0,40.0,70.0,63.6,5.32
+0G_Microgravity_Acute,82.0,84.1,9.0,105.0,43.0,62.0,59.0,5.08
+0G_Microgravity_12M,88.0,81.3,9.0,100.0,46.0,54.0,54.0,4.75
