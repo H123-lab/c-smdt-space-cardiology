@@ -44,4 +44,47 @@
     "Maximum_Allowable_Pressure_RMSE_mmHg": 2.0,
     "Fluid_Vortex_Disintegration_Alpha": 0.05
   }
+}{
+  "Benchmark_Metadata": {
+    "Project_Scope": "Cardio-Spatial Multi-Domain Digital Twin (C-SMDT) Verification",
+    "Analog_Type": "-6 Degree Head-Down Tilt (HDT) & Head-Down Bed Rest (HDBR)",
+    "Anatomical_Standard": "Anonymized NASA Open Science Data Repository Reference Cohorts"
+  },
+  "Ground_Truth_Terrestrial_Analog_Targets": {
+    "Acute_Hemodynamic_Shifts": {
+      "Central_Venous_Pressure_Elevation_mmHg": { "Nominal": 5.0, "Analog_Peak_0G": 9.0, "Tolerance_RMSE": 1.5 },
+      "Cephalad_Fluid_Redistribution_Pct": { "Target_Shift": 15.0, "Tolerance_Pct": 2.0 },
+      "Initial_Plasma_Volume_Depletion_Pct": { "Range_Min": 10.0, "Range_Max": 20.0 }
+    },
+    "Steady_State_Gravitational_Transitions": {
+      "1G_Earth_Nominal": {
+        "Stroke_Volume_mL": 78.0,
+        "Cardiac_Output_L_min": 5.50,
+        "Ejection_Fraction_Pct": 64.0,
+        "Heart_Rate_Variability_RMSSD_ms": 42.0
+      },
+      "0.38G_Martian_Predictive": {
+        "Stroke_Volume_mL": 70.0,
+        "Cardiac_Output_L_min": 5.00,
+        "Ejection_Fraction_Pct": 60.0,
+        "Heart_Rate_Variability_RMSSD_ms": 38.0
+      },
+      "0G_Microgravity_Immediate": {
+        "Stroke_Volume_mL": 62.0,
+        "Cardiac_Output_L_min": 4.40,
+        "Ejection_Fraction_Pct": 54.0,
+        "Heart_Rate_Variability_RMSSD_ms": 30.0
+      }
+    },
+    "Chronic_Remodeling_Thresholds_12M": {
+      "Myocardial_Atrophy_LV_Mass_Loss_Pct": { "Expected_Mean": 13.3, "Confidence_Interval": [10.0, 16.0] },
+      "Posterior_Wall_Thinning_Pct": { "Expected_Mean": 12.2, "Confidence_Interval": [9.0, 15.0] },
+      "Global_Longitudinal_Strain_Decline_Pct": { "Expected_Mean": 21.0, "Confidence_Interval": [15.0, 25.0] }
+    }
+  },
+  "Validation_Metrics": {
+    "R_Squared_Acceptance_Threshold": 0.91,
+    "Maximum_Allowable_Pressure_RMSE_mmHg": 2.0
+  }
 }
+
