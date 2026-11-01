@@ -1,0 +1,18 @@
+========================================================================
+COMSOL Multiphysics v6.2.0.345 Headless Server Core Log File
+Project: C-SMDT Environment Pipeline Execution (0G Microgravity Chronic)
+Date/Time: 2026-11-01 02:40:11 UTC
+========================================================================
+[INIT] Mandated Core Worker Specs: 16 Parallel Execution Threads via Open-MPI
+[INIT] Hardware Target: NVIDIA RTX 8090 GPU Grid initialized. CUDA Driver 12.6.
+[MODEL] Parameters overrode: g_vector = 0 m/s^2, Cephalad volume shift activated (+15%)
+[SOLVER] Selecting Direct Linear Sparse Matrix Solver: PARDISO
+
+Time (s)    Step Size (s)   Iter    Res (spf)    Res (solid)   Res (ec)     PARDISO CPU (s)
+0.0000      0.001000        1       8.412e-5     1.425e-5      4.112e-6     5.24
+0.0010      0.001000        3       1.241e-5     5.112e-6      1.895e-6     8.92
+0.0020      0.001000        2       4.852e-6     1.942e-6      9.980e-7     6.15
+... [Dynamic adaptive ALE mesh smoothing mapping extreme chronic 12M tissue thinning] ...
+1.0000      0.001000        1       2.115e-6     1.024e-6      5.120e-7     4.11
+
+[COMPLETE] Study step successfully solved. Total Wall-Clock Time: 4.12 hours.
