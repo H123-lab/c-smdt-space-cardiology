@@ -1,0 +1,7 @@
+Parameter_ID,Parameter_Name,Baseline_Value,Unit,Lower_Bound_Minus20Pct,Upper_Bound_Plus20Pct,Distribution_Type
+P001,HR_input,70.0,1/min,56.0,84.0,Uniform
+P002,R_prox_input,16.20,mmHg*min/L,12.96,19.44,Uniform
+P003,C_vessel_input,0.0150,mL/mmHg,0.0120,0.0180,Uniform
+P004,W_HO_a,0.496,kPa,0.3968,0.5952,Gaussian
+P005,W_HO_af,2.230,kPa,1.7840,2.6760,Gaussian
+P006,lambda_rheo,3.313,s,2.6504,3.9756,Uniform
