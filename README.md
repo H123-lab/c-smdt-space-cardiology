@@ -214,4 +214,11 @@ c-smdt-space-cardiology/
 │   ├── generate_figure5.py            # Chronic remodeling mass trajectory script
 │   ├── generate_figure6.py            # Flow vortex disintegration index script
 │   └── generate_figure7.py            # Baroreflex decay/HRV attenuation script
+├── 📁 tests/                           # Automated Software Testing & Verification
+│   ├── README.md                      # Test execution commands and workflows
+│   ├── test_mesh_integrity.py         # Mesh skewness and inversion test loop
+│   ├── test_parameter_loading.py      # JSON format and hyperelastic bounds checks
+│   ├── test_fsi_coupling.py           # Fluid-Structure residual convergence test
+│   ├── test_validation_metrics.py     # Statistical accuracy index check loop
+│   └── test_output_ranges.py          # Physiological safety clamping limit checks
 
