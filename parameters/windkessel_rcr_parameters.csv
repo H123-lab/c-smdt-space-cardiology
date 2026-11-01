@@ -1,0 +1,4 @@
+Gravity_Condition,R_prox_mmHg_min_L,R_dist_mmHg_min_L,C_vessel_mL_mmHg,P_venous_mmHg
+1G_Earth,16.20,14.58,0.0150,5.0
+0.38G_Mars,15.60,14.12,0.0145,6.2
+0G_Microgravity,15.00,13.80,0.0170,9.0
