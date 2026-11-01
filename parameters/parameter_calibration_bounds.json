@@ -1,0 +1,14 @@
+{
+  "Calibration_Routine": "Constrained Bayesian Optimization / Constrained Least-Squares",
+  "Optimization_Search_Envelopes": {
+    "Myocardial_Stiffness_a_kPa": { "Lower_Bound": 0.20, "Upper_Bound": 1.20, "Initial_Guess": 0.50 },
+    "Fiber_Stiffness_af_kPa": { "Lower_Bound": 1.00, "Upper_Bound": 5.00, "Initial_Guess": 2.00 },
+    "Vascular_Resistance_R_prox": { "Lower_Bound": 10.0, "Upper_Bound": 25.0, "Initial_Guess": 16.0 },
+    "Vascular_Compliance_C_vessel": { "Lower_Bound": 0.005, "Upper_Bound": 0.030, "Initial_Guess": 0.015 },
+    "Baroreflex_Gain_Decay_Tau_days": { "Lower_Bound": 90.0, "Upper_Bound": 360.0, "Initial_Guess": 180.0 }
+  },
+  "Convergence_Tolerances": {
+    "Objective_Function_Value_Limit": 1e-6,
+    "Maximum_Bayesian_Iterations": 200
+  }
+}
