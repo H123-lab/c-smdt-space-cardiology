@@ -1,0 +1,5 @@
+Gravity_Condition,Threads_Allocated,GPU_Acceleration_Active,Mesh_Elements,DoF,Wall_Clock_Time_Hours,Compute_Efficiency_Index
+1G_Earth,16,True,302140,2114980,3.22,1.000
+0.38G_Mars,16,True,302140,2114980,3.38,0.952
+0G_Microgravity_Acute,16,True,302140,2114980,3.45,0.933
+0G_Microgravity_12M_Remodeled,16,True,302140,2114980,4.12,0.781
