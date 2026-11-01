@@ -1,0 +1,7 @@
+Heartbeat_Time_ms,Fluid_Velocity_Residual,Solid_Traction_Residual,Pressure_Residual_Pa,Mesh_Jacobian_Minimum
+0.0,4.215e-5,8.450e-6,1.242e-1,0.8412
+200.0,2.154e-5,4.112e-6,8.541e-2,0.8124
+400.0,8.451e-6,2.110e-6,4.121e-2,0.7684
+600.0,3.112e-6,4.520e-6,1.142e-2,0.7415
+800.0,1.854e-6,1.112e-6,8.421e-3,0.7854
+1000.0,1.210e-6,7.420e-7,5.112e-3,0.8341
