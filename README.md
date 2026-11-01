@@ -164,6 +164,16 @@ c-smdt-space-cardiology/
 │   ├── blood_rheology.json           # Non-Newtonian Carreau-Yasuda fluid metrics
 │   ├── sensitivity_analysis_inputs.csv # Sobol index inputs and variation thresholds
 │   └── parameter_calibration_bounds.json # Upper/lower search boundaries for Bayesian steps
+├── 📁 results_reproducibility/         # Machine-Readable Manuscript Source Data
+│   ├── table1_validation_metrics.csv  # Statistical verification bounds source
+│   ├── table2_steady_state_hemodynamics.csv # Core homeostatic setpoints table source
+│   ├── table3_time_resolved_remodeling.csv # 12-month structural remodeling table source
+│   ├── figure2_source_data.csv         # Discretization geometry data coordinates
+│   ├── figure3_source_data.csv         # Acute localized cardiac metrics log
+│   ├── figure4_source_data.csv         # Diastolic fluid flow trace data matrix
+│   ├── figure5_source_data.csv         # Chronic remodeling timeline curves data
+│   ├── figure6_source_data.csv         # Flow vortex disintegration tracking tracking data
+│   └── figure7_source_data.csv         # Baroreflex decay/HRV deconditioning spectrum data
 
 ### Expanded Validation Structure and Reference Portals
 * **`validation_reference_mapping.csv`**: The master data provenance sheet cross-referencing all simulated parameters with their equivalent peer-reviewed target profiles, repository accession ids, and citable DOIs.
