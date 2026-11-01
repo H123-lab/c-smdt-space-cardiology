@@ -1,0 +1,10 @@
+{
+  "Subject_ID": "DEMO_SUBJECT_TEST_BENCH",
+  "Anonymization_Status": "100% Synthetic / Reference Control Template",
+  "Target_Physiologic_Setpoints": {
+    "End_Diastolic_Volume_mL": 122.0,
+    "End_Systolic_Volume_mL": 44.0,
+    "Baseline_Mean_Arterial_Pressure_mmHg": 93.3,
+    "Baseline_Heart_Rate_bpm": 70.0
+  }
+}
