@@ -1,0 +1,8 @@
+{
+  "Calibration_Prior_Distributions": {
+    "Myocardial_Stiffness_a_kPa": { "Type": "Gaussian", "Mean": 0.50, "Std_Dev": 0.10 },
+    "Fiber_Stiffness_af_kPa": { "Type": "Gaussian", "Mean": 2.20, "Std_Dev": 0.40 },
+    "Proximal_Resistance_R_prox": { "Type": "Uniform", "Lower_Bound": 12.0, "Upper_Bound": 20.0 },
+    "Arterial_Compliance_C_vessel": { "Type": "Uniform", "Lower_Bound": 0.010, "Upper_Bound": 0.025 }
+  }
+}
