@@ -1,0 +1,13 @@
+{
+  "Fluid_Model": "Non-Newtonian Carreau-Yasuda Rheology",
+  "Physical_Properties": {
+    "Blood_Mass_Density_kg_m3": 1060.0,
+    "Asymptotic_Infinite_Shear_Viscosity_Pa_s": 0.0035,
+    "Zero_Shear_Viscosity_Pa_s": 0.0560
+  },
+  "Carreau_Yasuda_Parameters": {
+    "Time_Constant_lambda_seconds": 3.313,
+    "Power_Law_Index_n": 0.3568,
+    "Yasuda_Exponent_a": 2.0000
+  }
+}
