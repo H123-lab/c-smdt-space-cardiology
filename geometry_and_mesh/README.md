@@ -23,3 +23,6 @@
 * **Format**: Structured Javascript Object Notation (JSON) translation profile
 * **Anatomical Alignment**: Preserves the exact rigid rotation arrays, isometric scaling parameters, and 3D translation coordinates used to standardize external anatomical source coordinates into the global COMSOL spatial mechanics workspace boundaries.
 
+### 6. `mesh_deformation_parameters.json`
+* **Format**: Structured JSON Grid Optimization Profile
+* **Deformation Scope**: Documents the Arbitrary Lagrangian-Eulerian (ALE) hyperelastic moving mesh configurations. It establishes the explicit Jacobian bounds and localized boundary layer size constants that prevent element self-intersection or solver crashing over the chronic 12-month wall thinning timeline.
