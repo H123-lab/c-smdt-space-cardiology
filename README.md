@@ -165,3 +165,9 @@ c-smdt-space-cardiology/
 │   ├── sensitivity_analysis_inputs.csv # Sobol index inputs and variation thresholds
 │   └── parameter_calibration_bounds.json # Upper/lower search boundaries for Bayesian steps
 
+### Expanded Validation Structure and Reference Portals
+* **`validation_reference_mapping.csv`**: The master data provenance sheet cross-referencing all simulated parameters with their equivalent peer-reviewed target profiles, repository accession ids, and citable DOIs.
+* **`iss_mri_reference_summary.csv`**: Aggregated flight parameters showing left ventricular tissue adjustments across 6-month and 12-month astronaut missions.
+* **`hdt_bedrest_reference_summary.csv`**: Ground-based data controls mapping continuous structural shifts under long-duration microgravity analogs.
+* **`parabolic_flight_reference_summary.csv`**: Transient fluid response recordings tracking acute hyper-gravity and zero-gravity transitions.
+* **`validation_metrics.csv`**: Holds the formalized statistical benchmarks ($R^2$, RMSE, and error tracking scores) validating all pipeline processes.
