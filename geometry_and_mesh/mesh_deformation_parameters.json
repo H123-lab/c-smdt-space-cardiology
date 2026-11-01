@@ -1,0 +1,37 @@
+{
+  "Mesh_Deformation_Profile": {
+    "Target_Framework": "Arbitrary Lagrangian-Eulerian (ALE) Kinematics",
+    "Smoothing_Algorithm": "Hyperelastic Mesh Smoothing Optimization",
+    "Mesh_Velocity_Interface": "v_mesh = d(d_solid)/dt"
+  },
+  "Adaptive_Grid_Remeshing_Triggers": {
+    "Maximum_Allowable_Element_Skewness": 0.82,
+    "Minimum_Element_Volume_Ratio": 0.05,
+    "Grid_Inversion_Prevention": {
+      "Jacobian_Determinant_Lower_Bound": 1e-4,
+      "Solver_Interrupt_Action": "Automatic Topological Re-mesh Trigger"
+    }
+  },
+  "Localized_Boundary_Layer_Refinement_M4": {
+    "Mitral_Valve_Ring_Annulus": {
+      "Element_Size_Max_mm": 0.60,
+      "Boundary_Layers_Count": 5,
+      "Stretching_Factor": 1.20
+    },
+    "Aortic_Outflow_Tract_LVOT": {
+      "Element_Size_Max_mm": 0.50,
+      "Boundary_Layers_Count": 6,
+      "Stretching_Factor": 1.15
+    },
+    "Ventricular_Apex_Curvature": {
+      "Element_Size_Max_mm": 0.75,
+      "Boundary_Layers_Count": 4,
+      "Stretching_Factor": 1.25
+    }
+  },
+  "Longitudinal_Atrophy_Grid_Updates_0G": {
+    "Mesh_Deformation_Step_Interval_Days": 1.0,
+    "Maximum_Wall_Thinning_Deformation_Limit_mm": 2.50,
+    "Total_Element_Count_Conservation": "Maintained at 302,140 Elements"
+  }
+}
