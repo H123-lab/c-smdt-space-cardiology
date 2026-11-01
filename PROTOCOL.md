@@ -66,7 +66,7 @@ Fluid-Solid Boundary Interface (ALE)
 Vascular Circulatory Coupling (Windkessel RCR)
 
 To prevent unphysiological static pressure reflections, couple the systemic outflow limits to independent three-element lumped-parameter Resistance-Capacitance-Resistance (RCR) network modules:
-
+      
        R_prox        R_dist
 
 Inflow ──■━━━━┳━━━━━━■── Outflow (Venous Return)
