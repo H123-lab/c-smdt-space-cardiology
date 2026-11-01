@@ -1,0 +1,20 @@
+{
+  "Figure_Styles": {
+    "DPI": 300,
+    "Font_Family": "sans-serif",
+    "Font_Sans_Serif": ["DejaVu Sans", "Arial", "Helvetica"],
+    "Title_Size": 12,
+    "Label_Size": 10,
+    "Tick_Size": 9,
+    "Legend_Size": 8.5,
+    "Grid_Style": ":",
+    "Grid_Alpha": 0.6,
+    "Colors": {
+      "Earth_1G": "#1f77b4",
+      "Mars_038G": "#ff7f0e",
+      "Microgravity_0G": "#d62728",
+      "Stability_Zone": "#e8f0fe",
+      "Grid_Lines": "#9aa0a6"
+    }
+  }
+}
