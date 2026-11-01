@@ -114,7 +114,7 @@ To meet strict biomedical tracking standards, the model must be validated agains
 
 Acceptance Thresholds: Final simulated Stroke Volume (SV), Ejection Fraction (EF), and Cardiac Output (CO) profiles must maintain a target predictive accuracy within \(\pm3\%\) of experimental human astronaut datasets.
 
-## 1.3 Longitudinal Mechanotransduction & Myocardial Atrophy Scaling Rules
+## 1.1 Longitudinal Mechanotransduction & Myocardial Atrophy Scaling Rules
 
 Chronic tissue remodeling (concentric wall thinning and mass reduction) is governed by local deviations in peak systolic fiber stress ($\sigma_{ff}$) relative to the homeostatic Earth control state ($\sigma_{ff, \mathrm{baseline}}$). 
 
@@ -139,7 +139,7 @@ Where:
 * $\alpha_{\mathrm{geo}}$ is a dimensionless anatomical shape-factor mapping coefficient ($\alpha_{\mathrm{geo}} = 0.154$), dictating the maximum asymptotic boundary limit of tissue atrophy.
 * $\mathbf{F}_{g}(t) / \mathbf{F}_{g, \mathrm{Earth}}$ scales the structural deconditioning drive directly against the specific planetary or microgravity mission configuration vector ($0.0$ for $0\text{G}$, $0.38$ for $0.38\text{G}$, and $1.0$ for $1\text{G}$).
 
-## 1.1 Fluid-Structure-Electrophysiology Interaction (FSEI) Governing Field Equations
+## 1.2 Fluid-Structure-Electrophysiology Interaction (FSEI) Governing Field Equations
 
 The Cardio-Spatial Multi-Domain Digital Twin (C-SMDT) relies on a strongly coupled, bidirectional continuum mechanics framework solved simultaneously across three mathematical physics layers.
 
@@ -179,7 +179,7 @@ $$\mathbf{\sigma} = \sigma_f (\mathbf{f}_0 \otimes \mathbf{f}_0) + \sigma_s (\ma
 
 ---
 
-## 1.2 Boundary Interface Continuity Rules (ALE Kinematics)
+## 1.3 Boundary Interface Continuity Rules (ALE Kinematics)
 
 To lock the fluid grid domains to the solid tissue walls without introducing boundary layer energy noise or coordinate divergence, the deforming internal boundaries enforce strict kinematic and dynamic conservation tracking constraints:
 
