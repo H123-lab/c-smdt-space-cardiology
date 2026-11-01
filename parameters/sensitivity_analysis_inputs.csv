@@ -1,0 +1,7 @@
+Parameter_ID,Parameter_Name,Nominal_Value,Perturbation_Min_Minus20Pct,Perturbation_Max_Plus20Pct,Sobol_Sensitivity_Index_Target
+P001,HR_input,70.0,56.0,84.0,0.342
+P002,R_prox_input,16.20,12.96,19.44,0.415
+P003,C_vessel_input,0.0150,0.0120,0.0180,0.521
+P004,W_HO_a,0.496,0.3968,0.5952,0.187
+P005,W_HO_af,2.23,1.784,2.676,0.224
+P006,lambda_rheo,3.313,2.6504,3.9756,0.068
