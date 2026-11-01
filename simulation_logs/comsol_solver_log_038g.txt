@@ -1,0 +1,18 @@
+========================================================================
+COMSOL Multiphysics v6.2.0.345 Headless Server Core Log File
+Project: C-SMDT Environment Pipeline Execution (0.38G Martian Target)
+Date/Time: 2026-10-31 18:15:42 UTC
+========================================================================
+[INIT] Mandated Core Worker Specs: 16 Parallel Execution Threads via Open-MPI
+[INIT] Hardware Target: NVIDIA RTX 8090 GPU Grid initialized. CUDA Driver 12.6.
+[MODEL] Parameters overrode dynamically by run_pipeline.py: g_vector = 3.71 m/s^2
+[SOLVER] Selecting Direct Linear Sparse Matrix Solver: PARDISO
+
+Time (s)    Step Size (s)   Iter    Res (spf)    Res (solid)   Res (ec)     PARDISO CPU (s)
+0.0000      0.001000        1       4.215e-5     8.450e-6      2.142e-6     4.85
+0.0010      0.001000        2       9.140e-6     3.112e-6      1.450e-6     6.12
+0.0020      0.001000        1       2.854e-6     1.120e-6      9.110e-7     3.98
+... [Steady sub-cycling loops mapping partial planetary gravity parameter scales] ...
+1.0000      0.001000        1       1.942e-6     9.150e-7      4.850e-7     3.91
+
+[COMPLETE] Study step successfully solved. Total Wall-Clock Time: 3.38 hours.
