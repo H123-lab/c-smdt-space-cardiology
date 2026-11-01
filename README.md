@@ -226,4 +226,14 @@ c-smdt-space-cardiology/
 │   ├── ETHICS_AND_PRIVACY.md          # HIPAA safe-harbor compliance & synthetic data rules
 │   ├── DATA_PROVENANCE.md             # Upstream ancestry tracking table for data pools
 │   └── THIRD_PARTY_DATA_LICENSES.md   # Open-access terms for NASA, OpenNeuro, & SimVascular
-
+├── 📁 example_run/                     # Lightweight Demonstration Test Bench
+│   ├── README.md                      # Quick-start instructions and testing steps
+│   ├── run_example_1g.sh              # 1G Earth rapid 5-cycle runtime shell script
+│   ├── run_example_038g.sh            # 0.38G Mars rapid 5-cycle runtime shell script
+│   ├── run_example_0g.sh              # 0G Space flight rapid 5-cycle runtime shell script
+│   ├── example_subject.json           # Synthetic reference profile data ingestion template
+│   └── 📁 expected_outputs/           # Verification boundaries for successful installs
+│       ├── expected_ef.csv            # Ejection fraction calibration targets data
+│       ├── expected_sv.csv            # Stroke volume calibration targets data
+│       ├── expected_gls.csv           # Global longitudinal strain targets data
+│       └── expected_pv_loop.csv       # Coordinate tracking data for pressure-volume checks
