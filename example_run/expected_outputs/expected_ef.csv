@@ -1,0 +1,4 @@
+Gravity_Condition,Expected_Demo_EF_Pct,Tolerance_Lower_Bound,Tolerance_Upper_Bound,Metric_Context
+1G_Earth,63.93,62.43,65.43,Nominal baseline resting contractility equilibrium
+0.38G_Mars,61.20,59.70,62.70,Attenuated intermediate gravitational loading
+0G_Microgravity,57.10,55.60,58.60,Acute fluid shift uncoupling transient state
