@@ -10,3 +10,7 @@
 * **Format**: VTK Legacy DataFile (ASCII VECTORS and SCALARS)
 * **Resolution**: $64 \times 64 \times 64$ voxel grid interpolation field
 * **Biophysical Mapping**: Contains continuous structural field tensors defining local myofiber vectors. The helical angle scales natively across the ventricular wall thickness from $+60^\circ$ (inner endocardial boundary layer) shifting down to $-60^\circ$ (outer epicardial layer) to drive anisotropic finite-strain computation loops accurately.
+
+### 3. `mesh_convergence_report.md`
+* **Format**: Markdown Verification Documentation (Convertible to PDF via standard markdown parsers)
+* **Mathematical Scope**: Documents grid-independence validation. It lists structural element variations, system degrees of freedom, and convergence error thresholds proving stability during the bidirectional FSEI sub-cycling loops. This file directly addresses standard reproducibility criteria required by Q1 editorial review boards.
