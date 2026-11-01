@@ -1,0 +1,8 @@
+Metric,Minimum_Value,Maximum_Value,Average_Value,Target_Acceptance_Threshold
+Element_Skewness,0.0124,0.4850,0.1842,<0.75 (Lower is better)
+Aspect_Ratio,1.0234,2.8450,1.4120,<4.00 (Closer to 1.0 is better)
+Volume_to_Length_Ratio,0.2412,0.8954,0.6841,>0.10 (Higher is better)
+Growth_Rate,1.0000,1.3500,1.1850,<1.50 (Lower is better)
+Minimum_Element_Angle_Deg,18.42,60.00,48.12,>15.0 Degrees
+Inverted_Elements_Count,0,0,0,Strictly 0 (No self-intersection)
+Collapsed_Elements_Count,0,0,0,Strictly 0 (No degenerate nodes)
