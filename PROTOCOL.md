@@ -139,3 +139,56 @@ Where:
 * $\alpha_{\mathrm{geo}}$ is a dimensionless anatomical shape-factor mapping coefficient ($\alpha_{\mathrm{geo}} = 0.154$), dictating the maximum asymptotic boundary limit of tissue atrophy.
 * $\mathbf{F}_{g}(t) / \mathbf{F}_{g, \mathrm{Earth}}$ scales the structural deconditioning drive directly against the specific planetary or microgravity mission configuration vector ($0.0$ for $0\text{G}$, $0.38$ for $0.38\text{G}$, and $1.0$ for $1\text{G}$).
 
+## 1.1 Fluid-Structure-Electrophysiology Interaction (FSEI) Governing Field Equations
+
+The Cardio-Spatial Multi-Domain Digital Twin (C-SMDT) relies on a strongly coupled, bidirectional continuum mechanics framework solved simultaneously across three mathematical physics layers.
+
+### 1. Intracardiac Fluid Dynamics (Navier-Stokes System)
+The blood domain within the expanding and contracting left ventricular cavity is modeled as an incompressible, Newtonian flow regime governed by the Navier-Stokes equations formulated in moving domains:
+
+$$\rho_{\mathrm{blood}} \left( \left. \frac{\partial \mathbf{u}}{\partial t} \right|_{\chi} + (\mathbf{u} - \mathbf{v}_{\mathrm{mesh}}) \cdot \nabla \mathbf{u} \right) = -\nabla p + \mu_{\mathrm{blood}} \nabla^2 \mathbf{u} + \rho_{\mathrm{blood}}\mathbf{g}(t)$$
+
+$$\nabla \cdot \mathbf{u} = 0$$
+
+Where:
+* $\mathbf{u}$ is the localized fluid velocity vector field.
+* $\mathbf{v}_{\mathrm{mesh}}$ is the deforming mesh coordinate velocity vector dictated by the ALE transformation.
+* $p$ is the dynamic intraventricular fluid pressure field.
+* $\rho_{\mathrm{blood}}$ ($1060 \text{ kg/m}^3$) and $\mu_{\mathrm{blood}}$ ($0.0035 \text{ Pa}\cdot\text{s}$) define physical constants.
+* $\mathbf{g}(t)$ is the gravity body force vector modulated explicitly across planetary configurations ($9.81 \text{ m/s}^2$, $3.71 \text{ m/s}^2$, or $0 \text{ m/s}^2$).
+
+### 2. Myocardial Solid Continuum Mechanics (Anisotropic Hyperelasticity)
+The solid ventricular wall domain behaves as an anisotropic, hyperelastic, incompressible continuum operating under large deformation kinematic assumptions. The total Piola-Kirchhoff stress tensor $\mathbf{S}$ is split into passive and active stress tensors:
+
+$$\mathbf{S} = \frac{\partial W_{\mathrm{passive}}}{\partial \mathbf{E}} - p_{\mathrm{solid}}\mathbf{C}^{-1} + T_{\mathrm{active}} \frac{\mathbf{C}\mathbf{f}_0 \otimes \mathbf{f}_0}{\|\mathbf{C}\mathbf{f}_0\|}$$
+
+The passive material response is driven by the anisotropic **Holzapfel–Ogden strain energy density function ($W_{\mathrm{passive}}$)**:
+
+$$W_{\mathrm{passive}} = \frac{a}{2b} \exp\left[b(I_1 - 3)\right] + \frac{a_f}{2b_f} \left\{ \exp\left[b_f(\langle I_{4f} - 1 \rangle)^2\right] - 1 \right\}$$
+
+Where $I_1$ is the first invariant of the right Cauchy-Green deformation tensor $\mathbf{C}$, and $I_{4f}$ is the structural invariant mapping square fiber stretch along the local point direction vectors $\mathbf{f}_0$ derived from the repository VTK atlas.
+
+### 3. Excitatory Wavefront Propagation (Monodomain Formulation)
+The electrical depolarization sequence triggering the active tension module ($T_{\mathrm{active}}$) is modeled via a parabolic monodomain PDE tracking transmembrane potentials ($V_m$):
+
+$$\chi \left( C_m \frac{\partial V_m}{\partial t} + I_{\mathrm{ion}}(V_m, \mathbf{w}) \right) = \nabla \cdot \left( \mathbf{\sigma} \nabla V_m \right)$$
+
+Where $\chi$ defines the cellular membrane surface-to-volume ratio, $C_m$ is the specific membrane capacitance, $I_{\mathrm{ion}}$ is the density of ionic currents modeled via dynamic gating variables $\mathbf{w}$, and $\mathbf{\sigma}$ is the anisotropic, fiber-aligned electrical conductivity tensor:
+
+$$\mathbf{\sigma} = \sigma_f (\mathbf{f}_0 \otimes \mathbf{f}_0) + \sigma_s (\mathbf{s}_0 \otimes \mathbf{s}_0) + \sigma_n (\mathbf{n}_0 \otimes \mathbf{n}_0)$$
+
+---
+
+## 1.2 Boundary Interface Continuity Rules (ALE Kinematics)
+
+To lock the fluid grid domains to the solid tissue walls without introducing boundary layer energy noise or coordinate divergence, the deforming internal boundaries enforce strict kinematic and dynamic conservation tracking constraints:
+
+### 1. Kinematic Velocity Continuity (No-Slip FSI)
+$$\mathbf{u}(\mathbf{x}, t) = \mathbf{v}_{\mathrm{mesh}}(\mathbf{x}, t) = \frac{\partial \mathbf{d}_{\mathrm{solid}}}{\partial t} \quad \text{on } \Gamma_{\mathrm{FSI}}$$
+
+Where $\mathbf{d}_{\mathrm{solid}}$ is the structural displacement vector computed in the solid mechanics grid, and $\Gamma_{\mathrm{FSI}}$ defines the physical deforming endocardial interface patch.
+
+### 2. Dynamic Traction Equilibrium
+$$\sigma_{\mathrm{fluid}} \cdot \mathbf{n}_{\mathrm{fluid}} + \sigma_{\mathrm{solid}} \cdot \mathbf{n}_{\mathrm{solid}} = \mathbf{0} \quad \text{on } \Gamma_{\mathrm{FSI}}$$
+
+Where $\sigma_{\mathrm{fluid}}$ and $\sigma_{\mathrm{solid}}$ represent the Cauchy stress tensors of the blood flow and muscular wall layers, respectively, ensuring perfect vector balancing during sub-cycling iteration steps.
