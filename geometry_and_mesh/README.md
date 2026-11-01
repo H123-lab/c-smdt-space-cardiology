@@ -14,3 +14,12 @@
 ### 3. `mesh_convergence_report.md`
 * **Format**: Markdown Verification Documentation (Convertible to PDF via standard markdown parsers)
 * **Mathematical Scope**: Documents grid-independence validation. It lists structural element variations, system degrees of freedom, and convergence error thresholds proving stability during the bidirectional FSEI sub-cycling loops. This file directly addresses standard reproducibility criteria required by Q1 editorial review boards.
+
+* ### 4. `mesh_quality_metrics.csv`
+* **Format**: Comma-Separated Values (CSV) database matrix
+* **Verification Scope**: Lists specific geometric element quality benchmarks (skewness distributions, element angles, aspect ratios) for the target fine mesh framework to verify structural stability before compute execution.
+
+### 5. `co_registration_rigid_transform.json`
+* **Format**: Structured Javascript Object Notation (JSON) translation profile
+* **Anatomical Alignment**: Preserves the exact rigid rotation arrays, isometric scaling parameters, and 3D translation coordinates used to standardize external anatomical source coordinates into the global COMSOL spatial mechanics workspace boundaries.
+
