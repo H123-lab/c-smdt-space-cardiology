@@ -1,0 +1,20 @@
+{
+  "Project_ID": "C-SMDT_Space_Cardiology_2026",
+  "Parameter_Set_Name": "Baseline Human Homologous Control Cohort",
+  "Cardiovascular_Baselines": {
+    "Heart_Rate_Resting_bpm": 70.0,
+    "Mean_Arterial_Pressure_Setpoint_mmHg": 93.3,
+    "Central_Venous_Pressure_Initial_mmHg": 5.0,
+    "Target_End_Diastolic_Volume_mL": 122.0,
+    "Target_End_Systolic_Volume_mL": 44.0,
+    "Baroreflex_Sensitivity_Gain_Hz_mmHg": 1.0
+  },
+  "Longitudinal_Remodeling_Velocity_Timeline": {
+    "Month_0_Control": { "Atrophy_Rate_Constant_kd": 0.0, "Target_Wall_Thinning_Ratio": 1.0 },
+    "Month_1_Acute": { "Atrophy_Rate_Constant_kd": 4.5e-3, "Target_Wall_Thinning_Ratio": 0.969 },
+    "Month_3_Subacute": { "Atrophy_Rate_Constant_kd": 4.5e-3, "Target_Wall_Thinning_Ratio": 0.929 },
+    "Month_6_Chronic": { "Atrophy_Rate_Constant_kd": 4.5e-3, "Target_Wall_Thinning_Ratio": 0.878 },
+    "Month_9_Chronic": { "Atrophy_Rate_Constant_kd": 4.5e-3, "Target_Wall_Thinning_Ratio": 0.852 },
+    "Month_12_Saturation": { "Atrophy_Rate_Constant_kd": 4.5e-3, "Target_Wall_Thinning_Ratio": 0.846 }
+  }
+}
