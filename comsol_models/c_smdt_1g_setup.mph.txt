@@ -1,0 +1,21 @@
+# COMSOL Multiphysics Global Parameter Export Block
+# Project: Cardio-Spatial Multi-Domain Digital Twin (C-SMDT)
+# Version: COMSOL v6.2 API Specification
+# Format: Name | Expression | Value | Description
+
+HR_input        | 70[1/min]           | 1.1667 Hz     | Baseline cycle heart rate frequency
+R_prox_input    | 16.20[mmHg*min/L]   | 1.296e8 Pa*s/m³| Proximal characteristic aortic resistor
+C_vessel_input  | 0.0150[mL/mmHg]     | 1.125e-10 m³/Pa| Systemic arterial compliance matrix
+g_vector        | 9.81[m/s^2]         | 9.81 m/s²     | Gravitational body force vector
+rho_blood       | 1060[kg/m^3]        | 1060 kg/m³    | Incompressible blood mass density
+mu_blood        | 0.0035[Pa*s]        | 0.0035 Pa*s   | Newtonian dynamic fluid shear viscosity
+EDV_target      | 122[mL]             | 1.22e-4 m³    | Target End-Diastolic Volume baseline
+ESV_target      | 44[mL]              | 4.40e-5 m³    | Target End-Systolic Volume baseline
+MAP_setpoint    | 93.3[mmHg]          | 12439 Pa      | Homeostatic mean arterial target boundary
+CVP_initial     | 5.0[mmHg]           | 666.6 Pa      | Baseline initial right atrial return pressure
+W_HO_a          | 0.496[kPa]          | 496 Pa        | Holzapfel-Ogden parameter: isotropic matrix
+W_HO_b          | 7.24                | 7.24          | Holzapfel-Ogden parameter: matrix scaling
+W_HO_af         | 2.23[kPa]           | 2230 Pa       | Holzapfel-Ogden parameter: fiber stiffening
+W_HO_bf         | 11.43               | 11.43         | Holzapfel-Ogden parameter: fiber scaling
+ALE_tol         | 1e-4                | 1.000e-4      | Mesh displacement convergence limit
+FSI_residual    | 1e-4                | 1.000e-4      | Fluid-solid traction boundary residual
