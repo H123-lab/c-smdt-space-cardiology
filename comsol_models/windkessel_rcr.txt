@@ -1,0 +1,25 @@
+# ==============================================================================
+# C-SMDT Systemic Windkessel RCR Lumped Parameter Circulatory Boundary Mapping
+# Format: Parameter_Name = Value [Units] # Description Context
+# ==============================================================================
+
+[EARTH_BASELINE_1G]
+# Nominal terrestrial hemodynamic afterload states
+R_prox_1G   = 16.20 [mmHg*min/L]   # Proximal aortic characteristic resistance
+R_dist_1G   = 14.58 [mmHg*min/L]   # Distal peripheral microvascular resistance
+C_vessel_1G = 0.0150 [mL/mmHg]     # Total systemic arterial compliance matrix
+P_venous_1G = 5.00 [mmHg]          # Fixed nominal ground truth right atrial return pressure
+
+[MARTIAN_TARGET_0.38G]
+# Graded gravity partial transition parameter arrays 
+R_prox_038G   = 15.60 [mmHg*min/L] # Attenuated characteristic proximal resistance
+R_dist_038G   = 14.12 [mmHg*min/L] # Distal resistance adjusted for partial gravity
+C_vessel_038G = 0.0145 [mL/mmHg]   # Compressed arterial vessel compliance matrix
+P_venous_038G = 6.20 [mmHg]        # Moderate central fluid pooling return baseline
+
+[MICROGRAVITY_ATROPHY_0G]
+# Total gravity unloading - models cephalad fluid shift configurations
+R_prox_0G   = 15.00 [mmHg*min/L]   # Blunted proximal resistance due to missing hydrostatic column
+R_dist_0G   = 13.80 [mmHg*min/L]   # Peripheral resistance mapping chronic cardiovascular deconditioning
+C_vessel_00G = 0.0170 [mL/mmHg]     # Vaulted compliance representing systemic vascular stretching shifts
+P_venous_0G = 9.00 [mmHg]          # Elevated central venous pressure target modeling cephalad loading
