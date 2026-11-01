@@ -182,6 +182,13 @@ c-smdt-space-cardiology/
 │   ├── fsi_residual_history.csv       # Cross-domain sub-cycling residual tracking logs
 │   ├── runtime_benchmarks.csv         # Wall-clock tracking per environment condition
 │   └── software_versions.json         # Exact OS kernel, build counts, and CUDA specs
+├── 📁 sensitivity_analysis/            # Sensitivity Matrix & Uncertainty Packages
+│   ├── sensitivity_protocol.md        # Variance-based Sobol protocol descriptions
+│   ├── sensitivity_parameter_ranges.csv # Explicit uncertainty ranges and boundaries
+│   ├── sensitivity_results.csv        # Tabulated output metrics and p-value scores
+│   ├── uncertainty_quantification_results.csv # LHS mean tracking and confidence limits
+│   ├── tornado_plot_source_data.csv   # Machine-readable plot coordinate values
+│   └── generate_sensitivity_figures.py # Auto-generates publication-grade Tornado plots
 
 ### Expanded Validation Structure and Reference Portals
 * **`validation_reference_mapping.csv`**: The master data provenance sheet cross-referencing all simulated parameters with their equivalent peer-reviewed target profiles, repository accession ids, and citable DOIs.
