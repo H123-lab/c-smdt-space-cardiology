@@ -174,6 +174,14 @@ c-smdt-space-cardiology/
 │   ├── figure5_source_data.csv         # Chronic remodeling timeline curves data
 │   ├── figure6_source_data.csv         # Flow vortex disintegration tracking tracking data
 │   └── figure7_source_data.csv         # Baroreflex decay/HRV deconditioning spectrum data
+├── 📁 simulation_logs/                 # Solver Convergence & HPC Verification
+│   ├── comsol_solver_log_1g.txt       # Raw execution trace logs for Earth models
+│   ├── comsol_solver_log_038g.txt     # Raw execution trace logs for Martian models
+│   ├── comsol_solver_log_0g.txt       # Raw execution trace logs for Microgravity models
+│   ├── convergence_history.csv        # Linear/nonlinear error tracking steps
+│   ├── fsi_residual_history.csv       # Cross-domain sub-cycling residual tracking logs
+│   ├── runtime_benchmarks.csv         # Wall-clock tracking per environment condition
+│   └── software_versions.json         # Exact OS kernel, build counts, and CUDA specs
 
 ### Expanded Validation Structure and Reference Portals
 * **`validation_reference_mapping.csv`**: The master data provenance sheet cross-referencing all simulated parameters with their equivalent peer-reviewed target profiles, repository accession ids, and citable DOIs.
