@@ -1,0 +1,5 @@
+Asset_ID,Source_Repository,Accession_or_Version,Operational_Role_In_Twin
+Anatomical_Mesh_Base,NASA Open Science Data Repository,OSDR-BR-00214,Provides left ventricular surface topography boundaries
+Fiber_Vector_Atlas,OpenNeuro,ds004152-v1.0.4,Maps helical point-vector field arrays for Holzapfel-Ogden equations
+Hyperelastic_Tensors,Living Heart Project,Constants-V2024.1.2,Validates continuous structural mechanics passive stiffness bounds
+Windkessel_Circuits,SimVascular Registry,Release-v2025-04,Calibrates lumped-parameter cardiovascular afterload resistance loops
