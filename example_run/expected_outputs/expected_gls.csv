@@ -1,0 +1,4 @@
+Gravity_Condition,Expected_Demo_GLS_Pct,Tolerance_Lower_Bound,Tolerance_Upper_Bound
+1G_Earth,-20.20,-21.70,-18.70
+0.38G_Mars,-18.40,-19.90,-16.90
+0G_Microgravity,-16.10,-17.60,-14.60
