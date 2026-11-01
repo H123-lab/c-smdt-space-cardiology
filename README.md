@@ -221,4 +221,9 @@ c-smdt-space-cardiology/
 │   ├── test_fsi_coupling.py           # Fluid-Structure residual convergence test
 │   ├── test_validation_metrics.py     # Statistical accuracy index check loop
 │   └── test_output_ranges.py          # Physiological safety clamping limit checks
+├── 📁 governance/                      # Data Privacy, Ethics & Governance Logs
+│   ├── DATA_GOVERNANCE.md             # Administrative retention and classification policies
+│   ├── ETHICS_AND_PRIVACY.md          # HIPAA safe-harbor compliance & synthetic data rules
+│   ├── DATA_PROVENANCE.md             # Upstream ancestry tracking table for data pools
+│   └── THIRD_PARTY_DATA_LICENSES.md   # Open-access terms for NASA, OpenNeuro, & SimVascular
 
