@@ -1,0 +1,6 @@
+Mesh_Density_ID,Nodes_Count,Tetrahedral_Elements,DoF,Max_Edge_Length_mm,Grid_Convergence_Index_GCI
+M1_Coarse,15420,45210,316470,3.5,0.0842
+M2_Medium,35680,112800,789600,2.2,0.0415
+M3_Fine,64210,210450,1473150,1.5,0.0188
+M4_Production,91450,302140,2114980,1.0,0.0052
+M5_Extreme,158200,524000,3668000,0.6,0.0011
