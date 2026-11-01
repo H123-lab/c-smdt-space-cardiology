@@ -1,0 +1,27 @@
+{
+  "Subject_ID": "SYNTH_COHORT_A_452",
+  "Metadata": {
+    "Age_Years": 34,
+    "Biological_Sex": "Male",
+    "Anonymization_Hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Clinical_Input_Metrics": {
+    "Hemodynamics": {
+      "Systolic_Blood_Pressure_mmHg": 120.0,
+      "Diastolic_Blood_Pressure_mmHg": 80.0,
+      "Derived_Mean_Arterial_Pressure_mmHg": 93.3,
+      "Central_Venous_Pressure_Estimate_mmHg": 5.0
+    },
+    "Echocardiography_Structural_Bounds": {
+      "End_Diastolic_Volume_mL": 122.0,
+      "End_Systolic_Volume_mL": 44.0,
+      "Calculated_Ejection_Fraction_Pct": 63.93,
+      "Global_Longitudinal_Strain_GLS_Pct": -20.2
+    },
+    "Wearable_Telemetry_Baselines": {
+      "Resting_Heart_Rate_bpm": 68.0,
+      "HRV_RMSSD_ms": 45.0,
+      "Mean_Core_Body_Temperature_C": 36.8
+    }
+  }
+}
