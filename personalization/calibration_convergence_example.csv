@@ -1,0 +1,6 @@
+Optimization_Iteration,Objective_Function_Residual,Current_Estimated_a_kPa,Current_Estimated_af_kPa,Current_Estimated_R_prox,Convergence_Status
+1,4.241e+02,0.312,1.542,12.42,Iterating
+10,8.425e+01,0.415,1.911,14.85,Iterating
+20,1.112e+00,0.482,2.185,15.98,Iterating
+35,6.425e-4,0.495,2.228,16.19,Iterating
+42,8.421e-7,0.496,2.230,16.20,CONVERGED_SUCCESSFULLY
