@@ -1,0 +1,6 @@
+Crew_Cohort_ID,Flight_Duration_Months,Pre_Flight_LV_Mass_g,Post_Flight_LV_Mass_g,Mass_Loss_Pct,Pre_LVEDD_mm,Post_LVEDD_mm
+ISS-Crew-04,5.5,154.2,141.2,-8.43,51.2,48.1
+ISS-Crew-08,6.2,148.5,134.1,-9.70,49.8,46.3
+ISS-Crew-11,6.0,151.0,137.2,-9.14,50.5,47.0
+ISS-Crew-23,12.1,155.4,131.6,-15.32,51.8,43.7
+ISS-Crew-29,11.8,149.2,126.8,-15.01,49.5,43.2
