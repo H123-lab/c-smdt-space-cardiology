@@ -66,7 +66,9 @@ Fluid-Solid Boundary Interface (ALE)
 Vascular Circulatory Coupling (Windkessel RCR)
 
 To prevent unphysiological static pressure reflections, couple the systemic outflow limits to independent three-element lumped-parameter Resistance-Capacitance-Resistance (RCR) network modules:
+
        R_prox        R_dist
+
 Inflow ──■━━━━┳━━━━━━■── Outflow (Venous Return)
               ┃
             ━━┻━━ C_vessel
@@ -99,6 +101,7 @@ Longitudinal Tissue Remodeling Mechanics (Chronic Phases)
 6. Verification and Validation (V&V) Targets
 
 To meet strict biomedical tracking standards, the model must be validated against the following historical thresholds before finalizing data generation:
+              
               [ Anatomical MRI / Wearable Biosignals ]
                                  │
                                  ▼
