@@ -1,0 +1,29 @@
+{
+  "Transformation_Metadata": {
+    "Source_Space": "NASA Open Science Data Repository / Zygote 3D Reference Frame",
+    "Target_Space": "COMSOL Multiphysics Global Cartesian Coordinate System",
+    "Alignment_Method": "Rigid Procrustes Co-Registration using Least-Squares Minimization",
+    "Target_Cohort_Dimensions": "Healthy Adult Male/Female 25-40 Consolidated Voxel Grid"
+  },
+  "Scaling_Factors": {
+    "Scale_X": 1.0000,
+    "Scale_Y": 1.0000,
+    "Scale_Z": 1.0000,
+    "Unit_Conversion": "Millimeters to Meters (Scale 1e-3 Multiplication applied natively)"
+  },
+  "Translation_Vector_mm": {
+    "Tx": 12.4503,
+    "Ty": -34.1824,
+    "Tz": 58.9102
+  },
+  "Rotation_Matrix_3x3": {
+    "Row_1": [0.9984, -0.0541, 0.0125],
+    "Row_2": [0.0539, 0.9981, 0.0284],
+    "Row_3": [-0.0141, -0.0277, 0.9995]
+  },
+  "Residual_Registration_Errors": {
+    "Mean_Square_Error_mm": 0.0842,
+    "Maximum_Deviation_mm": 0.3120,
+    "Target_Topological_Continuity": "PASSED (Zero structural boundary edge stitching errors detected)"
+  }
+}
