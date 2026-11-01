@@ -1,0 +1,7 @@
+Parameter,Output_Metric,Low_Perturbation_Effect,High_Perturbation_Effect,Total_Sensitivity_Index_ST
+C_vessel_input,Stroke_Volume_mL,-6.2,7.4,0.521
+R_prox_input,Stroke_Volume_mL,5.1,-5.8,0.415
+HR_input,Stroke_Volume_mL,4.2,-3.9,0.342
+W_HO_af,Stroke_Volume_mL,2.1,-2.4,0.224
+W_HO_a,Stroke_Volume_mL,1.4,-1.6,0.187
+lambda_rheo,Stroke_Volume_mL,-0.3,0.4,0.068
