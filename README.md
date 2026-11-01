@@ -204,3 +204,14 @@ c-smdt-space-cardiology/
 * **`hdt_bedrest_reference_summary.csv`**: Ground-based data controls mapping continuous structural shifts under long-duration microgravity analogs.
 * **`parabolic_flight_reference_summary.csv`**: Transient fluid response recordings tracking acute hyper-gravity and zero-gravity transitions.
 * **`validation_metrics.csv`**: Holds the formalized statistical benchmarks ($R^2$, RMSE, and error tracking scores) validating all pipeline processes.
+
+├── 📁 visualization/                   # 300 DPI Publication Vector Charts
+│   ├── figure_style.json              # Standardized plot aesthetics variables
+│   ├── plots_generator.py             # Combined master PV-loop/GLS dashboard generator
+│   ├── generate_figure2.py            # Mesh convergence graph script
+│   ├── generate_figure3.py            # Acute localized parameter block graph script
+│   ├── generate_figure4.py            # Diastolic fluid flow wave plot script
+│   ├── generate_figure5.py            # Chronic remodeling mass trajectory script
+│   ├── generate_figure6.py            # Flow vortex disintegration index script
+│   └── generate_figure7.py            # Baroreflex decay/HRV attenuation script
+
