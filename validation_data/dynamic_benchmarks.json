@@ -1,0 +1,47 @@
+{
+  "Project": "C-SMDT Open Science Verification Hub",
+  "Last_Updated": "2026-11-01",
+  "Target_Cohort": "Healthy Adult Astronauts (Ages 25-40, Balanced Sex)",
+  "Validation_Sources": {
+    "Source_1": "NASA Open Science Data Repository (OSDR)",
+    "Source_2": "-6 Degree Head-Down Tilt (HDT) Long-Duration Bed Rest Campaigns",
+    "Source_3": "ISS Flight Echocardiography and Cardiac MRI Time-Series"
+  },
+  "Hemodynamic_Targets": {
+    "1G_Earth_Nominal": {
+      "Stroke_Volume_mL": { "Mean": 78.0, "SD": 4.5, "Acceptable_Error_Pct": 3.0 },
+      "Ejection_Fraction_Pct": { "Mean": 64.0, "SD": 2.1, "Acceptable_Error_Pct": 3.0 },
+      "Cardiac_Output_L_min": { "Mean": 5.50, "SD": 0.4, "Acceptable_Error_Pct": 3.0 },
+      "End_Diastolic_Volume_mL": { "Mean": 122.0, "SD": 6.0, "Acceptable_Error_Pct": 3.0 },
+      "Peak_Systolic_Pressure_mmHg": { "Mean": 118.0, "SD": 5.0, "RMSE_Max_mmHg": 2.0 },
+      "Global_Longitudinal_Strain_Pct": { "Mean": -20.0, "SD": 1.2, "Acceptable_Error_Pct": 5.0 }
+    },
+    "0.38G_Martian_Analog": {
+      "Stroke_Volume_mL": { "Mean": 70.0, "SD": 5.0, "Acceptable_Error_Pct": 3.0 },
+      "Ejection_Fraction_Pct": { "Mean": 60.0, "SD": 2.5, "Acceptable_Error_Pct": 3.0 },
+      "Cardiac_Output_L_min": { "Mean": 5.00, "SD": 0.5, "Acceptable_Error_Pct": 3.0 },
+      "End_Diastolic_Volume_mL": { "Mean": 110.0, "SD": 7.2, "Acceptable_Error_Pct": 3.0 },
+      "Peak_Systolic_Pressure_mmHg": { "Mean": 114.0, "SD": 6.0, "RMSE_Max_mmHg": 2.0 },
+      "Global_Longitudinal_Strain_Pct": { "Mean": -17.3, "SD": 1.5, "Acceptable_Error_Pct": 5.0 }
+    },
+    "0G_Microgravity_Chronic_12M": {
+      "Stroke_Volume_mL": { "Mean": 62.0, "SD": 5.2, "Acceptable_Error_Pct": 3.0 },
+      "Ejection_Fraction_Pct": { "Mean": 54.0, "SD": 3.0, "Acceptable_Error_Pct": 3.0 },
+      "Cardiac_Output_L_min": { "Mean": 4.40, "SD": 0.6, "Acceptable_Error_Pct": 3.0 },
+      "End_Diastolic_Volume_mL": { "Mean": 100.0, "SD": 8.0, "Acceptable_Error_Pct": 3.0 },
+      "Peak_Systolic_Pressure_mmHg": { "Mean": 107.0, "SD": 7.0, "RMSE_Max_mmHg": 2.0 },
+      "Global_Longitudinal_Strain_Pct": { "Mean": -15.8, "SD": 1.8, "Acceptable_Error_Pct": 5.0 }
+    }
+  },
+  "Chronic_Remodeling_Timeline_0G_Targets": {
+    "Month_1": { "LV_Mass_Loss_Pct": 4.0, "Wall_Thickness_Posterior_mm": 9.5 },
+    "Month_3": { "LV_Mass_Loss_Pct": 8.7, "Wall_Thickness_Posterior_mm": 9.1 },
+    "Month_6": { "LV_Mass_Loss_Pct": 13.3, "Wall_Thickness_Posterior_mm": 8.6 },
+    "Month_12": { "LV_Mass_Loss_Pct": 15.2, "Wall_Thickness_Posterior_mm": 8.1 }
+  },
+  "Statistical_Acceptance_Thresholds": {
+    "Minimum_R_Squared": 0.910,
+    "Maximum_Allowable_Pressure_RMSE_mmHg": 2.0,
+    "Fluid_Vortex_Disintegration_Alpha": 0.05
+  }
+}
