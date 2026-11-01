@@ -1,0 +1,4 @@
+Campaign_ID,Subjects_Count,Tilt_Angle_Deg,Duration_Days,Mean_Stroke_Volume_Drop_Pct,Mean_MAP_Shift_mmHg,Accession_Number
+NASA-HDBR-2021,12,-6.0,60,-12.42,-4.2,OSDR-BR-00214
+ESA-AGBREW-2022,8,-6.0,90,-15.81,-5.1,OSDR-BR-00389
+JAXA-HDT-2024,10,-6.0,45,-9.15,-3.8,OSDR-BR-00512
