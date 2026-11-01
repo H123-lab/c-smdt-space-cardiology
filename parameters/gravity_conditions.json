@@ -1,0 +1,34 @@
+{
+  "Gravitational_Regimes_Parameter_Mapping": {
+    "EARTH_1G_BASELINE": {
+      "Gravity_Acceleration_m_s2": 9.81,
+      "Cephalad_Fluid_Volume_Shift_Pct": 0.0,
+      "Windkessel_RCR_Values": {
+        "R_prox_mmHg_min_L": 16.20,
+        "R_dist_mmHg_min_L": 14.58,
+        "C_vessel_mL_mmHg": 0.0150,
+        "P_venous_mmHg": 5.0
+      }
+    },
+    "MARTIAN_038G_PARADIGM": {
+      "Gravity_Acceleration_m_s2": 3.71,
+      "Cephalad_Fluid_Volume_Shift_Pct": 5.7,
+      "Windkessel_RCR_Values": {
+        "R_prox_mmHg_min_L": 15.60,
+        "R_dist_mmHg_min_L": 14.12,
+        "C_vessel_mL_mmHg": 0.0145,
+        "P_venous_mmHg": 6.2
+      }
+    },
+    "MICROGRAVITY_0G_DECONDITIONING": {
+      "Gravity_Acceleration_m_s2": 0.0,
+      "Cephalad_Fluid_Volume_Shift_Pct": 15.0,
+      "Windkessel_RCR_Values": {
+        "R_prox_mmHg_min_L": 15.00,
+        "R_dist_mmHg_min_L": 13.80,
+        "C_vessel_mL_mmHg": 0.0170,
+        "P_venous_mmHg": 9.0
+      }
+    }
+  }
+}
