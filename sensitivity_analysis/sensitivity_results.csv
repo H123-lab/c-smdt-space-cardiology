@@ -1,0 +1,7 @@
+Parameter_Perturbed,Baseline_Value,Perturbation_Range,Output_Affected,Percentage_Change,Direction_of_Effect,Statistical_Significance_p
+R_prox_input,16.20,12.96 to 19.44,Stroke_Volume,-8.42,Inverse,0.0012
+C_vessel_input,0.0150,0.0120 to 0.0180,Stroke_Volume,11.15,Direct,0.0004
+W_HO_a,0.496,0.397 to 0.595,Ejection_Fraction,-3.45,Inverse,0.0142
+W_HO_af,2.230,1.784 to 2.676,Global_Longitudinal_Strain,-4.82,Inverse,0.0085
+HR_input,70.0,56.0 to 84.0,Mean_Arterial_Pressure,6.12,Direct,0.0023
+lambda_rheo,3.313,2.650 to 3.976,Intracardiac_Vorticity,1.24,Direct,0.1420
