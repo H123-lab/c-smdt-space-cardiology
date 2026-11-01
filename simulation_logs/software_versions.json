@@ -1,0 +1,31 @@
+{
+  "System_Environment_Specifications": {
+    "Operating_System_Kernel": "Ubuntu 24.04.1 LTS (Linux 6.8.0-47-generic x86_64)",
+    "Parallel_Infrastructure": "Open-MPI v5.0.3 / MPICH v4.2.1",
+    "GPU_Acceleration_Suite": {
+      "CUDA_Driver_Version": "12.6.1",
+      "CUDA_Runtime_API": "12.6",
+      "NVIDIA_Display_Driver": "560.35.03",
+      "cuDNN_Library_Version": "9.3.0"
+    }
+  },
+  "Commercial_Core_Solvers": {
+    "COMSOL_Multiphysics_Platform": {
+      "Build_Number": "6.2.0.345 (CFD, Structural Mechanics, and AC/DC Modules Patched)",
+      "API_Bridge_Mode": "Headless TCP/IP Client-Server Framework"
+    },
+    "MATLAB_Mathematical_Engine": {
+      "Build_Number": "9.18.0.2456012 (R2025a Update 1)",
+      "Toolboxes_Utilized": ["Optimization Toolbox", "Control System Toolbox"]
+    }
+  },
+  "Python_Orchestration_Dependencies": {
+    "Python_Interpreter": "3.12.4 (main, Jun 12 2024, 18:21:42)",
+    "Mph_COMSOL_Bridge_Library": "1.3.1",
+    "Numpy_Matrix_Array_Engine": "2.1.3",
+    "Scipy_Scientific_Calculators": "1.14.1",
+    "Pandas_Data_Frames": "2.2.3",
+    "Matplotlib_Vector_Generator": "3.9.3",
+    "Seaborn_Analytics_Layouts": "0.13.2"
+  }
+}
