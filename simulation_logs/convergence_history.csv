@@ -1,0 +1,6 @@
+Solver_Iteration_Count,Linear_System_Residual,Nonlinear_Newton_Error,ALE_Mesh_Volume_Ratio,Solver_Status
+1,4.21e-2,8.42e-2,0.9984,Iterating
+2,1.85e-3,4.15e-3,0.9952,Iterating
+3,6.42e-5,1.12e-4,0.9912,Iterating
+4,3.12e-6,4.52e-6,0.9894,CONVERGED_SUCCESS
+5,8.42e-7,9.15e-7,0.9894,CONVERGED_SUCCESS
