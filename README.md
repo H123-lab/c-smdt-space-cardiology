@@ -189,6 +189,14 @@ c-smdt-space-cardiology/
 │   ├── uncertainty_quantification_results.csv # LHS mean tracking and confidence limits
 │   ├── tornado_plot_source_data.csv   # Machine-readable plot coordinate values
 │   └── generate_sensitivity_figures.py # Auto-generates publication-grade Tornado plots
+├── 📁 personalization/                 # Personalization & Subject-Specific Tuning
+│   ├── calibration_workflow.md        # HIPAA data privacy & processing protocols
+│   ├── subject_template.json          # Anonymized synthetic data ingestion sheet
+│   ├── prior_distributions.json       # Structural boundaries for calibration sweeps
+│   ├── calibration_convergence_example.csv # Iteration trace data logging sheet
+│   ├── calibration_objective_function.py # Weighted least-squares error metrics logic
+│   ├── constrained_least_squares_example.py # L-BFGS-B bound parameter tuning loop
+│   └── bayesian_calibration_example.py # Metropolis-Hastings MCMC distribution array
 
 ### Expanded Validation Structure and Reference Portals
 * **`validation_reference_mapping.csv`**: The master data provenance sheet cross-referencing all simulated parameters with their equivalent peer-reviewed target profiles, repository accession ids, and citable DOIs.
