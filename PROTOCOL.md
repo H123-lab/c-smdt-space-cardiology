@@ -114,3 +114,29 @@ To meet strict biomedical tracking standards, the model must be validated agains
    • Target Base SV (70-120 mL)             • Core Waveform Accuracy R² ≥ 0.91
 
 Acceptance Thresholds: Final simulated Stroke Volume (SV), Ejection Fraction (EF), and Cardiac Output (CO) profiles must maintain a target predictive accuracy within \(\pm3\%\) of experimental human astronaut datasets.
+
+## 1.3 Longitudinal Mechanotransduction & Myocardial Atrophy Scaling Rules
+
+Chronic tissue remodeling (concentric wall thinning and mass reduction) is governed by local deviations in peak systolic fiber stress ($\sigma_{ff}$) relative to the homeostatic Earth control state ($\sigma_{ff, \mathrm{baseline}}$). 
+
+### 1. Local Volumetric Remodeling Rate
+The local inelastic remodeling velocity tensor is driven by an activation rule operating on a continuous stress deficit threshold:
+
+$$\frac{d\vartheta_{\mathrm{atrophy}}}{dt} = \mathcal{K}_{\mathrm{remodel}} \cdot \left\langle \frac{\sigma_{ff, \mathrm{baseline}} - \sigma_{ff}(t)}{\sigma_{ff, \mathrm{baseline}}} \right\rangle - \frac{1}{\tau_{\mathrm{remodel}}} \cdot (\vartheta_{\mathrm{atrophy}} - \vartheta_{\mathrm{asymptotic}})$$
+
+Where:
+* $\vartheta_{\mathrm{atrophy}}$ is the localized structural tissue volume scale reduction factor ($1.0$ at baseline).
+* $\mathcal{K}_{\mathrm{remodel}}$ is the mechanotransduction scaling velocity constant ($4.5 \times 10^{-3} \text{ day}^{-1}$).
+* $\langle \bullet \rangle$ defines the standard Macaulay brackets, ensuring tissue atrophy activates *only* when local systolic fiber stress falls below the homeostatic baseline checkpoint threshold.
+* $\tau_{\mathrm{remodel}}$ represents the biological remodeling saturation time constant, calibrated to $\tau = 180 \text{ days}$ (6 months) based on spaceflight-analog bed rest profiles.
+
+### 2. Transmural Myocardial Wall Thinning Constraint
+To accurately translate localized cell-level volume shrinkage into macroscopic geometric wall thinning across the coordinates tree, the dynamic local thickness ($h$) of the ventricular wall is updated step-wise over the timeline:
+
+$$h(t) = h_0 \cdot \left[ 1 - \alpha_{\mathrm{geo}} \cdot \left( 1 - e^{-t/\tau_{\mathrm{remodel}}} \right) \cdot \left( 1 - \frac{\mathbf{F}_{g}(t)}{\mathbf{F}_{g, \mathrm{Earth}}} \right) \right]$$
+
+Where:
+* $h_0$ is the initial baseline wall thickness ($9.8\text{ mm}$ posterior, $10.5\text{ mm}$ septal).
+* $\alpha_{\mathrm{geo}}$ is a dimensionless anatomical shape-factor mapping coefficient ($\alpha_{\mathrm{geo}} = 0.154$), dictating the maximum asymptotic boundary limit of tissue atrophy.
+* $\mathbf{F}_{g}(t) / \mathbf{F}_{g, \mathrm{Earth}}$ scales the structural deconditioning drive directly against the specific planetary or microgravity mission configuration vector ($0.0$ for $0\text{G}$, $0.38$ for $0.38\text{G}$, and $1.0$ for $1\text{G}$).
+
