@@ -1,0 +1,4 @@
+Gravity_Condition,Expected_Demo_SV_mL,Tolerance_Lower_Bound,Tolerance_Upper_Bound
+1G_Earth,78.00,76.50,79.50
+0.38G_Mars,71.20,69.70,72.70
+0G_Microgravity,63.40,61.90,64.90
