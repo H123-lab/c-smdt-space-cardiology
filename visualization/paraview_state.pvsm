@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParaView>
+  <ServerManagerState version="5.12.0" patch="0">
+    <!-- Proxy definition for loading structural and fluid vtk/vtu file streams -->
+    <Proxy group="sources" type="VTKReader" id="943" name="C_SMDT_Mesh_Data">
+      <Property name="FileNames" id="943.FileNames">
+        <Element index="0" value="../geometry_and_mesh/fiber_orientation_atlas.vtk"/>
+      </Property>
+    </Proxy>
+
+    <!-- Configure the Myocardial Wall Strain (GLS) 3D Surface Color Mapping Properties -->
+    <Proxy group="lookup_tables" type="PVLookupTable" id="1052" name="Strain_Heatmap_Colors">
+      <Property name="RGBPoints" id="1052.RGBPoints">
+        <Element index="0" value="-20.0" value="0.12" value="0.46" value="0.70"/> <!-- High Strain: Blue Baseline -->
+        <Element index="1" value="-15.0" value="0.99" value="0.49" value="0.05"/> <!-- Moderate Strain: Orange -->
+        <Element index="2" value="0.0" value="0.83" value="0.15" value="0.15"/>  <!-- Low Strain: Red Deficit -->
+      </Property>
+      <Property name="ScalarRangeInitialized" id="1052.ScalarRangeInitialized" value="1"/>
+    </Proxy>
+
+    <!-- Configure the Intracardiac Fluid Velocity Field Streamlines Filter -->
+    <Proxy group="filters" type="StreamTracer" id="1210" name="Diastolic_Vortex_Lines">
+      <Property name="Input" id="1210.Input" value="943"/>
+      <Property name="IntegrationDirection" id="1210.IntegrationDirection" value="BOTH"/>
+      <Property name="IntegratorType" id="1210.IntegratorType" value="Runge-Kutta 4-5"/>
+      <Property name="MaximumStepLength" id="1210.MaximumStepLength" value="0.1"/>
+      <Property name="Seeds" id="1210.Seeds">
+        <Proxy group="sources" type="PointSource" id="1215"/>
+      </Property>
+    </Proxy>
+
+    <!-- Render View Workspace Configuration Matrix -->
+    <Proxy group="views" type="RenderView" id="2001" name="C_SMDT_Main_Viewport">
+      <Property name="ViewSize" id="2001.ViewSize">
+        <Element index="0" value="1920"/>
+        <Element index="1" value="1080"/>
+      </Property>
+      <Property name="Background" id="2001.Background">
+        <Element index="0" value="1.0"/> <!-- Clean white minimalist background for Q1 journal figures -->
+        <Element index="1" value="1.0"/>
+        <Element index="2" value="1.0"/>
+      </Property>
+      <Property name="CameraPosition" id="2001.CameraPosition">
+        <Element index="0" value="0.0"/>
+        <Element index="1" value="-250.0"/>
+        <Element index="2" value="30.0"/>
+      </Property>
+    </Proxy>
+  </ServerManagerState>
+</ParaView>
