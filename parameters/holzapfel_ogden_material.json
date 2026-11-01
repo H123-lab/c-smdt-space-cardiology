@@ -1,0 +1,19 @@
+{
+  "Material_Model": "Holzapfel-Ogden Passive Hyperelastic Myocardium",
+  "Myocardial_Tissue_Constants_kPa": {
+    "a_isotropic_matrix_stiffness": 0.496,
+    "b_matrix_scaling_dimensionless": 7.24,
+    "a_f_fiber_direction_stiffness": 2.23,
+    "b_f_fiber_scaling_dimensionless": 11.43,
+    "a_s_sheet_direction_stiffness": 0.0,
+    "b_s_sheet_scaling_dimensionless": 0.0
+  },
+  "Valve_Leaflet_Elastic_Moduli_MPa": {
+    "Mitral_Valve_Leaflet_Stiffness": 2.50,
+    "Aortic_Valve_Leaflet_Stiffness": 3.20
+  },
+  "Vascular_Compartment_Bulk_Moduli_GPa": {
+    "Aortic_Root_Wall_Bulk_Modulus": 1.45,
+    "Systemic_Arterial_Wall_Bulk_Modulus": 1.20
+  }
+}
