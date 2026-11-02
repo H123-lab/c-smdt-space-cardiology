@@ -1,0 +1,7 @@
+Pareto_Point_ID,Volume_Residual_mL,Pressure_Residual_mmHg,Is_Pareto_Optimal,Selected_Design_Standard
+Opt_01,14.82,0.12,false,Excluded
+Opt_02,8.45,0.45,false,Excluded
+Opt_03,3.12,0.84,true,Boundary_Limit
+Opt_04,1.45,1.12,true,Optimal_Balanced_Choice
+Opt_05,0.42,1.98,true,Boundary_Limit
+Opt_06,0.11,3.42,false,Excluded
