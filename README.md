@@ -197,6 +197,13 @@ c-smdt-space-cardiology/
 │   ├── calibration_objective_function.py # Weighted least-squares error metrics logic
 │   ├── constrained_least_squares_example.py # L-BFGS-B bound parameter tuning loop
 │   └── bayesian_calibration_example.py # Metropolis-Hastings MCMC distribution array
+├── 📁 personalization/
+│   └── pareto_frontier_data.csv       # Multi-objective validation boundary matrices
+├── 📁 tests/
+│   └── test_statistical_residuals.py  # Automated Shapiro-Wilk residual normality test
+└── 📁 visualization/
+    ├── plot_mcmc_traces.py            # Generates Bayesian trace convergence plots
+    └── interactive_dashboard.py       # Streamlit web-app system GUI explorer interface
 
 ### Expanded Validation Structure and Reference Portals
 * **`validation_reference_mapping.csv`**: The master data provenance sheet cross-referencing all simulated parameters with their equivalent peer-reviewed target profiles, repository accession ids, and citable DOIs.
