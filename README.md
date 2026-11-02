@@ -244,6 +244,10 @@ c-smdt-space-cardiology/
 │       ├── expected_sv.csv            # Stroke volume calibration targets data
 │       ├── expected_gls.csv           # Global longitudinal strain targets data
 │       └── expected_pv_loop.csv       # Coordinate tracking data for pressure-volume checks
+├── 📁 personalization/
+│   └── calibration_error_residuals.csv # Cross-validation scores and residual error tracks
+└── 📁 tests/
+    └── test_calibration_bounds.py     # Automated calibration boundary error test loop
 
 ---
 
