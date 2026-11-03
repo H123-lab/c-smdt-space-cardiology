@@ -276,6 +276,6 @@ Multi-objective optimization runs and Bayesian MCMC sampling sweeps are notoriou
 ### 3. Open-Access Citation Mapping Tracker
 If you utilize this Multi-Domain Digital Twin repository architecture, parameters trees, or fluid-structure interface templates in your research or mission planning workflows, please cite the permanent Zenodo data archive snapshot:
 
-> **Iftikhar, H. (2026).** *Cardio-Spatial Multi-Domain Digital Twin (C-SMDT) Co-Simulation Workflow Package for Spaceflight Hemodynamic Tracing and Ventricular Remodeling Atrophy (v1.0.0).* GitHub Repository & Zenodo Open Archive. **https://doi.org**
+> **Iftikhar, H. (2026).** *Cardio-Spatial Multi-Domain Digital Twin (C-SMDT) Co-Simulation Workflow Package for Spaceflight Hemodynamic Tracing and Ventricular Remodeling Atrophy (v1.0.0).* GitHub Repository & Zenodo Open Archive. 
 
 ---
