@@ -3,10 +3,9 @@
     "Operating_System_Kernel": "Ubuntu 24.04.1 LTS (Linux 6.8.0-47-generic x86_64)",
     "Parallel_Infrastructure": "Open-MPI v5.0.3 / MPICH v4.2.1",
     "GPU_Acceleration_Suite": {
-      "CUDA_Driver_Version": "12.6.1",
-      "CUDA_Runtime_API": "12.6",
-      "NVIDIA_Display_Driver": "560.35.03",
-      "cuDNN_Library_Version": "9.3.0"
+  "GPU_Hardware_Model": "NVIDIA RTX 5090",
+  "CUDA_Driver_Version": "12.6.1"
+    }
     }
   },
   "Commercial_Core_Solvers": {
